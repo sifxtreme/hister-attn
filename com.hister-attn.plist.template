@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- Template. Do not load directly — run ./install.sh, which fills the __PLACEHOLDERS__
+     and installs the result to ~/Library/LaunchAgents/com.hister-attn.plist. -->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.hister-attn</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>__NODE_BIN__</string>
+        <string>__SERVER_JS__</string>
+    </array>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+        <!-- node:sqlite is stable enough for our use; silence its experimental warning -->
+        <key>NODE_NO_WARNINGS</key>
+        <string>1</string>
+    </dict>
+
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <true/>
+
+    <key>StandardOutPath</key>
+    <string>__LOG_DIR__/hister-attn.out.log</string>
+    <key>StandardErrorPath</key>
+    <string>__LOG_DIR__/hister-attn.err.log</string>
+</dict>
+</plist>

@@ -1,0 +1,13 @@
+{
+  "name": "hister-attn",
+  "version": "0.1.0",
+  "description": "View-count and active-attention counter for the Hister personal web index.",
+  "type": "module",
+  "license": "AGPL-3.0-or-later",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "start": "node server.mjs"
+  }
+}

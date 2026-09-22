@@ -1,0 +1,10 @@
+# Built extension (vendored AGPL upstream + our patches) — reproduce with ./apply-fork.sh
+extension/build/
+extension/vendor/
+
+# Generated LaunchAgent plist (from com.hister-attn.plist.template via install.sh)
+*.plist
+
+# Runtime
+node_modules/
+*.log
