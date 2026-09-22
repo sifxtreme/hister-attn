@@ -8,3 +8,6 @@ extension/vendor/
 # Runtime
 node_modules/
 *.log
+
+# macOS
+.DS_Store
